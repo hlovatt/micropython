@@ -64,6 +64,8 @@ Methods
        respectively.
      - ``bits`` can be 8 or 16, and is the number of bits in each transferred word.
      - ``firstbit`` can be ``SPI.MSB`` or ``SPI.LSB``.
+     - ``ti`` True if Texas Instruments (Ti) conventions are used as opposed to Motorola;
+       use of ``Ti`` overrides ``polarity`` and ``phase``.
      - ``crc`` can be None for no CRC, or a polynomial specifier.
 
    Note that the SPI clock frequency will not always be the requested baudrate.
